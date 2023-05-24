@@ -21,6 +21,12 @@ public class RegisterAgentHandler : IRequestHandler<RegisterAgentCommand, object
         }
         
         var result = await _spaceTradersClient.RegisterAgentAsync(command);
+
+        if (!result.IsSuccessStatusCode)
+        {
+            return new object();
+        }
+
         return result;
     }
 }

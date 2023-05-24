@@ -14,10 +14,10 @@ public class SpaceTradersClient : ISpaceTradersClient
         _httpClientFactory = httpClientFactory;
     }
 
-    public async Task<object> RegisterAgentAsync(RegisterAgentCommand command)
+    public async Task<HttpResponseMessage> RegisterAgentAsync(RegisterAgentCommand command)
     {
         var client = _httpClientFactory.CreateClient();
-        return await client.PostAsJsonAsync<object>(_registerUrl, command);
+        return await client.PostAsJsonAsync(_registerUrl, command);
     }
 }
 

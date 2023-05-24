@@ -20,7 +20,7 @@ var app = builder.Build();
 app.MapPost("/api/registerAgent", async (IMediator mediator, RegisterAgentCommand command) =>
 {
     var result = await mediator.Send(command);
-    return Results.CreatedAtRoute("Register a new agent in the game", result) ;
+    return result is null ? Results.Conflict("Your request is probably not good enough. Check your data once again.") : result;
 })
     .WithName("Register agent")
     .Produces(StatusCodes.Status201Created);
