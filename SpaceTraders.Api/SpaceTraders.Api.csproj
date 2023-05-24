@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SpaceTraders.Application\SpaceTraders.Application.csproj" />
+    <ProjectReference Include="..\SpaceTraders.Infrastructure\SpaceTraders.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

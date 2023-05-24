@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceTraders.Api", "SpaceTr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceTraders.Application", "SpaceTraders.Application\SpaceTraders.Application.csproj", "{7536D788-7EC0-4A4F-A03C-747C761AEF00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{34DD28A3-DD7A-4A5E-A42E-3C313A929A09}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceTraders.Infrastructure", "SpaceTraders.Infrastructure\SpaceTraders.Infrastructure.csproj", "{2E070952-D3C1-4996-898A-E1391CD1DA2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{7536D788-7EC0-4A4F-A03C-747C761AEF00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7536D788-7EC0-4A4F-A03C-747C761AEF00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7536D788-7EC0-4A4F-A03C-747C761AEF00}.Release|Any CPU.Build.0 = Release|Any CPU
-		{34DD28A3-DD7A-4A5E-A42E-3C313A929A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{34DD28A3-DD7A-4A5E-A42E-3C313A929A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{34DD28A3-DD7A-4A5E-A42E-3C313A929A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{34DD28A3-DD7A-4A5E-A42E-3C313A929A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E070952-D3C1-4996-898A-E1391CD1DA2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E070952-D3C1-4996-898A-E1391CD1DA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E070952-D3C1-4996-898A-E1391CD1DA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E070952-D3C1-4996-898A-E1391CD1DA2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
