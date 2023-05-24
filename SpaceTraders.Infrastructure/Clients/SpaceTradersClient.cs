@@ -14,10 +14,17 @@ public class SpaceTradersClient : ISpaceTradersClient
         _httpClientFactory = httpClientFactory;
     }
 
-    public async Task<HttpResponseMessage> RegisterAgentAsync(RegisterAgentCommand command)
+    public async Task<object> RegisterAgentAsync(RegisterAgentCommand command)
     {
         var client = _httpClientFactory.CreateClient();
-        return await client.PostAsJsonAsync(_registerUrl, command);
+        var response = await client.PostAsJsonAsync(_registerUrl, command);
+
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception("Cannot create a new agent.");
+        }
+
+        return await response.Content.ReadFromJsonAsync<object>();
     }
 }
 
