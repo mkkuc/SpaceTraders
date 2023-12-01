@@ -20,6 +20,7 @@ var app = builder.Build();
 app.MapPost("/api/registerAgent", async (IMediator mediator, RegisterAgentCommand command) =>
 {
     var result = await mediator.Send(command);
+
     return result is null ? Results.Conflict("Your request is probably not good enough. Check your data once again.") : result;
 })
     .WithName("Register agent")
